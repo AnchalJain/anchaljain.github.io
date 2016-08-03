@@ -1,0 +1,25 @@
+body{
+	margin:0
+}
+
+.contain {
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto
+}
+@media (min-width:768px) {
+	.contain {
+		width:750px
+	}
+}
+@media (min-width:992px) {
+	.contain {
+		width:970px
+	}
+}
+@media (min-width:1200px) {
+	.contain {
+		width:1170px
+	}
+}
