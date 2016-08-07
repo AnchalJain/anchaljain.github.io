@@ -8,6 +8,13 @@ body{
 	margin:0
 }
 
+h1{
+	text-align: center;
+	color: #b30047;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 48px;
+}
+
 .contain {
 	padding-right:15px;
 	padding-left:15px;
@@ -96,10 +103,61 @@ ul.topnav li img{
 	vertical-align: middle;
 }
 
+.row{
+	margin-right:-5px;
+	margin-left:-5px
+	
+}
+
+#hex1 {
+  width: 75px;
+  height: 75px;
+}
+
+#color1{
+
+}
+
+.hexagon-wrapper {
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.hexagon {
+  height: 100%;
+  width: calc(100% * 0.57735);
+  display: inline-block;
+  background: url("assets/Aj.jpg");
+}
+
+.hexagon:before {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(60deg);
+}
+
+.hexagon:after {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(-60deg);
+}
+
   .element{
   /* polygon responsive to font-size
   shape-outside: polygon(0 0, 0 100%, 100% 100%);
   width: 20em;
   height: 40em;
   
-}
+}*/
