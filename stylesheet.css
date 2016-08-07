@@ -1,3 +1,9 @@
+html {
+	font-family:sans-serif;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%
+}
+
 body{
 	margin:0
 }
@@ -8,18 +14,92 @@ body{
 	margin-right:auto;
 	margin-left:auto
 }
-@media (min-width:768px) {
-	.contain {
-		width:750px
-	}
+
+ul.topnav{
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+	background-color: #003366;
+	position: relative;
+	top: 0;
+	margin-top: 0;
+	width: 100%;
 }
-@media (min-width:992px) {
-	.contain {
-		width:970px
-	}
+
+ul.topnav li{
+	float: left;
+	padding-right: 30px;
 }
-@media (min-width:1200px) {
-	.contain {
-		width:1170px
+
+ul.topnav li a{
+	margin-top: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 24px 32px;
+	text-decoration: none;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 32px;
+
+	
 	}
+.right{
+	float: right;
+	padding-right: 150px;
+}
+.left{
+	float: left;
+	padding-left: 180px;
+}
+ul.topnav li a:hover{
+	font-weight: bold;
+	color: white;
+	font-size: 34px;
+}
+ul.topnav li a:active{
+	font-weight: bold;
+	color: white;
+	font-size: 34px;
+}
+
+.img-circle{
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(assets/CYMERA_20160710_195332.jpg) no-repeat center center;
+	margin-top: 40px;
+	margin-left: 80px;
+	margin-right: auto;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	shape-image-threshold: 
+}
+
+.img-response{
+	position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display:block;
+	max-width:100%;
+	
+	
+}
+ul.topnav li img{
+	vertical-align: middle;
+}
+
+  .element{
+  /* polygon responsive to font-size
+  shape-outside: polygon(0 0, 0 100%, 100% 100%);
+  width: 20em;
+  height: 40em;
+  
 }
