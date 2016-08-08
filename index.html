@@ -7,8 +7,31 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></link>
 	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'></link> -->
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"></link>
-	<script href="https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+        $(document).ready(function(){
+        $("#myBtn").click(function(){
+        $("#myModal").modal();
+        });
+        });
+     </script>
+
+     
+    
+     <script type="text/javascript">
+     	function showStuff(element)  {
+    	var tabContents = document.getElementsByClassName('tabContent');
+    	for (var i = 0; i < tabContents.length; i++) { 
+        	tabContents[i].style.display = 'none';
+    	}
+
+    // change tabsX into tabs-X in order to find the correct tab content
+    	var tabContentIdToShow = element.id.replace(/(\d)/g, '-$1');
+    	document.getElementById(tabContentIdToShow).style.display = 'block';
+		}
+     </script>
 
 
 </head>
@@ -18,26 +41,26 @@
 			<ul class="topnav">
 				
 				<div class="left">
-				<li><a class="active" href="#about"><i class="fa fa-smile-o" aria-hidden="true"></i>About</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#projects">Projects</a></li>
+				<li><a class="active" href="#about" id="tabs1" onclick="showStuff(this)"><i class="fa fa-smile-o" aria-hidden="true"></i>About</a></li>
+				<li><a href="#skills" id="tabs2" onclick="showStuff(this)">Skills</a></li>
+				<li><a href="#projects" id="tabs3" onclick="showStuff(this)">Projects</a></li>
 				</div>
 				<li class="img-circle img-response"></li>
 				<div class="right">
-				<li><a href="#journey">Journey</a></li>
-				<li><a href="#contact">Contact</a></li>
-				<li><a href="#resume">Resume</a></li>
+				<li><a href="#journey" id="tabs4" onclick="showStuff(this)">Journey</a></li>
+				<li><a href="#contact" id="tabs5" onclick="showStuff(this)">Contact</a></li>
+				<li><a href="#resume" id="tabs6" onclick="showStuff(this)">Resume</a></li>
 				</div>
 			</ul>
 			<br></br>
 			
-			<div id="about" class="contain">
+			<div id="tabs-1" class="tabContent">
 				
 				<h1>#Think #Dream #Desire #Achive</h1>
 
 			</div>
 
-			<div id=skills>
+			<div id="tabs-2" class="tabContent">
 				<h2><b>Skills</b></h2>
 				<div class="wrapper container well">
 					
@@ -73,8 +96,55 @@
 
 
 
-			<div id=projects>
+			<div id="tabs-3" class="tabContent">
 				<h2><b>Projects</b></h2>
+				<div class="wrapper container box">
+					<h2><b>Course Registration System</b></h2>
+					<div class="row">
+						<div class="col-xs-1"></div>
+						<div class="col-sm-10">
+							<img src="assets/course.png" class="img-responsive">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-1"></div>
+						<div class="col-sm-9">
+							<a href="https://github.com/AnchalJain/COURSE-REGISTRATION-SYSTEM"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+						</div>
+						<div class="col-sm-2">
+							<li><a href="#" id="myBtn"><i class="fa fa-ellipsis-h fa-4x" aria-hidden="true"></i></a></li>
+							<!-- Modal -->
+  								<div class="modal fade" id="myModal" role="dialog">
+    							<div class="modal-dialog">
+    
+      						<!-- Modal content-->
+      							<div class="modal-content">
+        							<div class="modal-header">
+          								<button type="button" class="close" data-dismiss="modal">&times;</button>
+          								<h4 class="modal-title">Modal Header</h4>
+        							</div>
+        						
+        							<div class="modal-body">
+          								<p>Some text in the modal.</p>
+        							</div>
+        							
+        							<div class="modal-footer">
+          								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        							</div>
+      							</div>
+      
+    							</div>
+  								</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-1"></div>
+						<div class="col-sm-9"></div>
+						<div class="col-sm-2" style="width:24px; font-size:26px; color:#3366cc;"><b>More</b></div>
+
+					</div>
+				</div>
 			</div>
 			
 </body>
