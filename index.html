@@ -21,15 +21,15 @@
      
     
      <script type="text/javascript">
-     	  $(document).ready(function() {
-            $("#tabs").tabs({active: document.tabTest.currentTab.value});
-
-            $('#tabs a').click(function(e) {
-                var curTab = $('.ui-tabs-active');
-                curTabIndex = curTab.index();
-                document.tabTest.currentTab.value = curTabIndex;
-            });
-        });
+     	function showStuff(element)  {
+    	var tabContents = document.getElementsByClassName('tabContent');
+    	for (var i = 0; i < tabContents.length; i++) { 
+        	tabContents[i].style.display = 'none';
+    	}
+    // change tabsX into tabs-X in order to find the correct tab content
+    	var tabContentIdToShow = element.id.replace(/(\d)/g, '-$1');
+    	document.getElementById(tabContentIdToShow).style.display = 'block';
+		}
      </script>
 
 
@@ -37,44 +37,30 @@
 <body>
 	
 		
-			 <form name="tabTest" method="post" action="tab">
-        		<!-- default tab value 2 for Tab 3 -->            
-        	<input type="hidden" name="currentTab" value="2"/> 
-        	<div id="tabs">
 			<ul class="topnav">
 				
 				<div class="left">
-				<li><a class="active" href="#tabs1"><i class="fa fa-home" aria-hidden="true"></i>About</a></li>
-				<li><a href="#tabs2" ><i class="fa fa-th-large" aria-hidden="true"></i>Skills</a></li>
-				<li><a href="#tabs3" ><i class="fa fa-align-justify" aria-hidden="true"></i>
+				<li><a class="active" href="#about" id="tabs1" onclick="showStuff(this)"><i class="fa fa-home" aria-hidden="true"></i>About</a></li>
+				<li><a href="#skills" id="tabs2" onclick="showStuff(this)"><i class="fa fa-th-large" aria-hidden="true"></i>Skills</a></li>
+				<li><a href="#projects" id="tabs3" onclick="showStuff(this)"><i class="fa fa-align-justify" aria-hidden="true"></i>
 				Projects</a></li>
 				</div>
 				<li class="img-circle img-response"></li>
 				<div class="right">
-				<li><a href="#tabs4"><i class="fa fa-spinner" aria-hidden="true"></i>
+				<li><a href="#journey" id="tabs4" onclick="showStuff(this)"><i class="fa fa-spinner" aria-hidden="true"></i>
 				Journey</a></li>
-				<li><a href="#tabs5"><i class="fa fa-comments-o" aria-hidden="true"></i>
+				<li><a href="#contact" id="tabs5" onclick="showStuff(this)"><i class="fa fa-comments-o" aria-hidden="true"></i>
 				Contact</a></li>
-				<li><a href="assets/Resume.pdf" id="tabs6"><i class="fa fa-file" aria-hidden="true"></i>
+				<li><a href="assets/Resume.pdf" id="tabs6" onclick="showStuff(this)"><i class="fa fa-file" aria-hidden="true"></i>
 				Resume</a></li>
 				</div>
 			</ul>
-			</div>
-			</form>
 			<br></br>
 			
 			<div id="tabs-1" class="tabContent">
 				
 				<h1>#Think #Dream #Desire #Achive</h1>
-				
-				<div class="container" style="text-align:center; font-size:28px; font-family:"Georgia, serif";>
-				<p>
 
-					This is something which is caputred my interest	and <br>reflecting every bit of it when you open this page.<br>
-					This is <b>Anchal Jain</b>	studying <b>Bachelors in Technology</b><br>in <b>Computer Science</b> in <b>Arya College of Engg. & 
-					I.T.</b><br> I do not know myself for language skills but infact<br> I know myself as a lover of computers and<br> what to explore this field as much I can.
-				</p>
-				</div>
 			</div>
 
 			<div id="tabs-2" class="tabContent">
