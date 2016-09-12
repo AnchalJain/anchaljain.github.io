@@ -24,68 +24,12 @@ body{
 
 
 
-#tabs-1 h1{
+.tabs-2 h1{
 	text-align: center;
 	color: #b30047;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	
 }
-
-
-/*
-.topnav{
-	list-style-type: none;
-	padding: 0;
-	overflow: hidden;
-	background-color: #003366;
-	position: relative;
-	top: 0;
-	text-align: center;
-	padding-left: 400px;
-	width: 100%;
-	height: 50%;
-}
-
-.topnav li{
-	float: left;
-	padding-right: 100px;
-	display: inline;
-}
-
-.topnav 
-	display: inline-block;
-}
-
-ul.topnav li a{
-	margin-top: 250px;
-	margin-left: 0;
-	margin-right: 0;
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 24px 32px;
-	text-decoration: none;
-	font-family: "Times New Roman", Times, serif;
-	font-size: 32px;
-
-	
-}
-
-ul.topnav li:nth-of-type(4){
-	margin-left: 217px;
-}
-
-ul.topnav li a:hover{
-	font-weight: bold;
-	color: white;
-	font-size: 34px;
-}
-ul.topnav li a:active{
-	font-weight: bold;
-	color: white;
-	font-size: 34px;
-}
-*/
 
 
 #header {
@@ -162,31 +106,7 @@ ul.topnav li a:active{
   }
 }
 
-/*@media screen and (max-width: 800px) {
-  ul.topnav li:not(:.img-circle) {display: none;}
-  ul.topnav .img-circle{
-  	float: right;
-  	display: inline-block;
-  }
-}
-  
-  @media screen and (max-width: 800px){
-  	ul.topnav{position: relative;}
-  	ul.topnav .img-circle{
-  		position: absolute;
-  		right: 0;
-  		top:0;
-  	}
-  	ul.topnav li{
-  		float:none;
-  		display: inline;
-  	}
-  	ul.topnav li a{
-  		display: block;
-  		text-align: left;
-  	}
-  }
-*/
+
  .img-circle{
 	width: 100px;
 	height: 100px;
@@ -219,7 +139,7 @@ ul.topnav li img{
 }
 
 
-#tabs-2 h2{
+.tabs-1 h2{
 	font-size: 36px;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	text-align: center;
@@ -227,14 +147,28 @@ ul.topnav li img{
 
 }
 
-#tabs-3 h2{
+.tabs-2 h2{
 	
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	text-align: center;
 	color: #00ccff;
 }
 
-#tabs-3 h3{
+.tabs-3 h2{
+	
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-align: center;
+	color: #00ccff;
+}
+
+.tabs-4 h2{
+	
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-align: center;
+	color: #00ccff;
+}
+
+.tabs-3 h3{
 	
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	text-align: center;
@@ -260,14 +194,23 @@ ul.topnav li img{
 	background-color: #ffccff;
 }
 
-#tabs-5 h2{
+.tabs-5 h2{
 	
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	text-align: center;
 	color:#00ccff;
 }
 
-#tabs-5 hr
+.tabs-5  hr
+{
+    border: 1px solid #737373;
+}
+
+.tabs-4 hr{
+	border: 1px solid #737373;
+}
+}
+
 {
     border: 1px solid #737373;
 }
@@ -302,7 +245,7 @@ body {
     background-color: black;
 }
 
-#tabs-5 p{
+.tabs-5 p{
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: 24px;
 }
