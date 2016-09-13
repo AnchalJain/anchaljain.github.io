@@ -49,16 +49,16 @@ body{
 
 }
 
-#header ul li {
+#header ul a {
   float: left;
   width: 97px;
 }
 
-#header ul li:nth-of-type(4) {
+#header ul a:nth-of-type(4) {
   margin-left: 217px;
 }
 
-#header ul li:nth-of-type(3){
+#header ul a:nth-of-type(3){
 	margin-right: 217px;
 }
 
@@ -66,7 +66,7 @@ body{
 	padding-right: 17px;
 }*/
 
-#header ul li a {
+#header ul  a {
   text-transform: uppercase;
   text-decoration: none;
   display: block;
@@ -75,7 +75,7 @@ body{
   color: white;
 }
 
-#header ul li a:hover {
+#header ul  a:hover {
   font-weight: 2000px;
   
 }
@@ -89,51 +89,79 @@ body{
 
 @media screen and (max-width: 800px) {
   .logo {
-    bottom: 320px;
+    bottom: 310px;
   }
 
-  #header ul li:nth-of-type(4) {
+  #header ul a:nth-of-type(4) {
     margin-left: 0px;
   }
 
-   #header ul li:nth-of-type(3){
+   #header ul a:nth-of-type(3){
    	margin-right: 0px;
    }
-  
-  #header ul {
-    width: 600px;
-    position: relative;
+
+   #header ul {
+   
+    list-style-type:none;
+    margin-left:200px;
+    padding:0;
+    position: absolute;
+    text-align: center;
+   }
+
+   #header ul a{
+   	width:80px;
+
+   }
+
+  @media screen and (max-width: 700px){
+  	#header ul{
+  		list-style-type: none;
+  		margin-left: 150px;
+  		position: absolute;
+  	}
+  } 
+
+  @media screen and (max-width: 600px){
+  	#header ul{
+  		list-style-type: none;
+  		margin-left: 100px;
+  		position: absolute;
+  	}
+  } 
+
+  @media screen and (max-width: 500px){
+  	#header ul{
+  		list-style-type: none;
+  		margin-left: 50px;
+  		position: absolute;
+  	}
   }
+
+
+  
+ 
 }
 
-
- .img-circle{
-	width: 100px;
-	height: 100px;
-	border-radius: 50px;
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
-	margin-top: 40px;
-	margin-left: 80px;
-	margin-right: auto;
-	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	shape-image-threshold: 
-}
-
-.img-response{
-	position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display:block;
-	max-width:100%;
+@media screen and (max-width: 400px){
 	
+	#header ul{
+		margin-left: 20px;
+		position: absolute;
+	}
 	
+	#header ul a > span{
+		display : none;
+	}
+
+	#header ul a{
+		width: 70px;
+	}
 }
+
+
+
+ 
 ul.topnav li img{
 	vertical-align: middle;
 }
