@@ -36,7 +36,7 @@ body{
   background-color:  #003366;
   height: 90px;
   position: relative;
-  margin: 300px auto 0;
+  margin: 150px auto 0;
 
 }
 
@@ -92,6 +92,10 @@ body{
     bottom: 310px;
   }
 
+  #header{
+  	margin: 300px auto 0;
+  }
+
   #header ul a:nth-of-type(4) {
     margin-left: 0px;
   }
@@ -115,6 +119,11 @@ body{
    }
 
   @media screen and (max-width: 700px){
+  	
+  	#header{
+  	margin: 300px auto 0;
+  }
+
   	#header ul{
   		list-style-type: none;
   		margin-left: 150px;
@@ -123,6 +132,11 @@ body{
   } 
 
   @media screen and (max-width: 600px){
+  	
+  	#header{
+  	margin: 300px auto 0;
+  }
+
   	#header ul{
   		list-style-type: none;
   		margin-left: 100px;
@@ -131,6 +145,11 @@ body{
   } 
 
   @media screen and (max-width: 500px){
+  	
+  	#header{
+  	margin: 300px auto 0;
+  }
+
   	#header ul{
   		list-style-type: none;
   		margin-left: 50px;
@@ -145,6 +164,11 @@ body{
 
 @media screen and (max-width: 400px){
 	
+	#header{
+  	margin: 300px auto 0;
+  }
+
+
 	#header ul{
 		margin-left: 20px;
 		position: absolute;
